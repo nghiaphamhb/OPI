@@ -1,0 +1,74 @@
+<project name="Lab3Project" default="build" basedir=".">
+    <!-- ========== Properties ========== -->
+    <property file="build.properties"/>
+    <!--    Lâys các thuộc tính từ build.properties -->
+
+    <!--    Nhóm các file .jar lấy id là classpath -->
+    <path id="library">
+        <fileset dir="${lib.dir}" includes="**/*.jar"/>
+    </path>
+
+    <!-- ========== Targets ========== -->
+    <target name="clean">
+        <echo message="Cleaning compiled classes and temp files..."/>
+        <delete dir="${build.dir}"/>
+        <delete dir="${target.dir}"/>
+    </target>
+
+    <target name="compile">
+        <echo message="Compiling source code..."/>
+        <mkdir dir="${classes.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" classpathref="library" includeantruntime="false"/>
+    </target>
+
+    <target name="build" depends="compile">
+<!--        Sao chép thư mục lib vào build-->
+        <copy todir="${build.dir}/webapp/lib">
+            <fileset dir="${lib.dir}">
+                <include name="*.jar"/>
+            </fileset>
+        </copy>
+        <war destfile="${war.file}" webxml="${webapp.dir}/WEB-INF/web.xml">
+            <manifest>
+                <attribute name="Manifest-Version" value="1.0"/>
+                <attribute name="Version" value="1.0-SNAPSHOT"/>
+            </manifest>
+<!--            Các file dùng để xây dựng -->
+            <fileset dir="${build.dir}/webapp">
+                <include name="**/*"/>
+                <exclude name="**/WEB-INF/web.xml"/>
+            </fileset>
+        </war>
+    </target>
+
+    <target name="test" depends="build">
+        <mkdir dir="${build.dir}/test-reports"/>
+        <junit printsummary="yes">
+            <classpath>
+                <pathelement path="${classes.dir}"/>
+                <path refid="library"/>
+            </classpath>
+            <formatter type="xml"/>
+            <batchtest fork="true" todir="${build.dir}/test-reports">
+                <fileset dir="${test.dir}">
+                    <include name="**/*Test.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+
+    <target name="scp" depends="build">
+        <scp todir="${scp.host}" port="${scp.port}" password="${scp.password}" trust="true">
+            <fileset dir="${build.dir}">
+                <include name="**/*.war" />
+            </fileset>
+        </scp>
+    </target>
+
+<!--    <target name="scp" depends="build">-->
+
+<!--    </target>-->
+
+
+
+</project>
