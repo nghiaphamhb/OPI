@@ -1,87 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="PHAMDANGTRUNGNGHIA" name="PointTest" skipped="0" tests="7" time="0.075" timestamp="2025-05-12T17:53:02">
+<testsuite errors="0" failures="0" hostname="PHAMDANGTRUNGNGHIA" name="PointTest" skipped="0" tests="7" time="0.148" timestamp="2025-05-14T13:25:49">
   <properties>
-    <property name="ant.library.dir" value="D:\apache-ant-1.10.15\lib" />
-    <property name="ant.file.type" value="file" />
-    <property name="java.specification.version" value="17" />
+    <property name="java.vendor" value="Amazon.com Inc." />
+    <property name="lib.dir" value="lib" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Windows 11" />
+    <property name="sun.boot.class.path" value="C:\Users\Admin\.jdks\corretto-1.8.0_432\jre\lib\resources.jar;C:\Users\Admin\.jdks\corretto-1.8.0_432\jre\lib\rt.jar;C:\Users\Admin\.jdks\corretto-1.8.0_432\jre\lib\sunrsasign.jar;C:\Users\Admin\.jdks\corretto-1.8.0_432\jre\lib\jsse.jar;C:\Users\Admin\.jdks\corretto-1.8.0_432\jre\lib\jce.jar;C:\Users\Admin\.jdks\corretto-1.8.0_432\jre\lib\charsets.jar;C:\Users\Admin\.jdks\corretto-1.8.0_432\jre\lib\jfr.jar;C:\Users\Admin\.jdks\corretto-1.8.0_432\jre\classes" />
+    <property name="ant.file.Lab3Project" value="D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\build.xml" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="D:\apache-ant-1.10.15\bin\.." />
+    <property name="java.runtime.version" value="1.8.0_432-b06" />
+    <property name="user.name" value="Admin" />
+    <property name="scp.port" value="2222" />
+    <property name="ant.file.type.Lab3Project" value="file" />
+    <property name="build.dir" value="build" />
+    <property name="scp.password" value="aTEL}5112" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="C:\Users\Admin\.jdks\corretto-1.8.0_432\jre\bin" />
+    <property name="ant.project.default-target" value="build" />
     <property name="ant.project.name" value="Lab3Project" />
+    <property name="java.version" value="1.8.0_432" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="C:\Users\Admin\.jdks\corretto-1.8.0_432\jre\lib\endorsed" />
     <property name="sun.cpu.isalist" value="amd64" />
     <property name="sun.jnu.encoding" value="Cp1252" />
-    <property name="java.class.path" value="D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\build\webapp\classes;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\ant-1.10.12.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\ant-jsch-1.10.12.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\ant-launcher-1.10.12.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\gson-2.10.1.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\javaee-web-api-8.0.1.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\jsch-0.1.55.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\junit-3.8.2.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\lombok-1.18.30.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\postgresql-42.5.4.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\primefaces-12.0.0.jar;D:\apache-ant-1.10.15\lib\ant-launcher.jar;D:\apache-ant-1.10.15\lib\ant.jar;D:\apache-ant-1.10.15\lib\ant-junit.jar;D:\apache-ant-1.10.15\lib\ant-junit4.jar" />
-    <property name="java.vm.vendor" value="Oracle Corporation" />
-    <property name="ant.file.Lab3Project" value="D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\build.xml" />
-    <property name="sun.arch.data.model" value="64" />
-    <property name="user.variant" value="" />
-    <property name="java.vendor.url" value="https://java.oracle.com/" />
-    <property name="os.name" value="Windows 11" />
-    <property name="java.vm.specification.version" value="17" />
-    <property name="webapp.dir" value="src/main/webapp" />
-    <property name="user.country" value="US" />
-    <property name="sun.java.launcher" value="SUN_STANDARD" />
-    <property name="sun.boot.library.path" value="D:\JDK17\bin" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner PointTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\build\test-reports\TEST-PointTest.xml crashfile=D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\junitvmwatcher6747152107738178473.properties propsfile=D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\junit303685625062655225.properties" />
-    <property name="jdk.debug" value="release" />
-    <property name="test.dir" value="src/test/java" />
-    <property name="sun.cpu.endian" value="little" />
-    <property name="user.home" value="C:\Users\Admin" />
-    <property name="user.language" value="en" />
-    <property name="sun.stderr.encoding" value="cp437" />
-    <property name="java.specification.vendor" value="Oracle Corporation" />
-    <property name="java.version.date" value="2023-07-18" />
-    <property name="java.home" value="D:\JDK17" />
+    <property name="file.encoding.pkg" value="sun.io" />
     <property name="file.separator" value="\" />
-    <property name="basedir" value="D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3" />
-    <property name="java.vm.compressedOopsMode" value="32-bit" />
-    <property name="sun.stdout.encoding" value="cp437" />
-    <property name="line.separator" value="&#xd;&#xa;" />
-    <property name="ant.java.version" value="17" />
-    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
     <property name="java.specification.name" value="Java Platform API Specification" />
-    <property name="user.script" value="" />
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
-    <property name="java.runtime.version" value="17.0.8+9-LTS-211" />
-    <property name="user.name" value="Admin" />
-    <property name="ant.file" value="D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\build.xml" />
-    <property name="path.separator" value=";" />
-    <property name="ant.file.type.Lab3Project" value="file" />
-    <property name="os.version" value="10.0" />
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="file.encoding" value="Cp1252" />
-    <property name="ant.project.invoked-targets" value="test" />
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
-    <property name="target.dir" value="target" />
-    <property name="build.dir" value="build" />
-    <property name="ant.core.lib" value="D:\apache-ant-1.10.15\lib\ant.jar" />
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
-    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\" />
-    <property name="java.version" value="17.0.8" />
-    <property name="user.dir" value="D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3" />
-    <property name="os.arch" value="amd64" />
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
-    <property name="war.file" value="target/WEB-LAB3-1.0.war" />
-    <property name="ant.home" value="D:\apache-ant-1.10.15\bin\.." />
-    <property name="lib.dir" value="lib" />
-    <property name="sun.os.patch.level" value="" />
-    <property name="native.encoding" value="Cp1252" />
-    <property name="ant.version" value="Apache Ant(TM) version 1.10.15 compiled on August 25 2024" />
-    <property name="java.library.path" value="D:\JDK17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\msys64\mingw64\bin;D:\Java\bin;D:\php-8.3.3;D:\Git\cmd;%M2_HOME%\bin;C:\Program Files\WireGuard\;C:\Program Files\CMake\bin;C:\ProgramData\chocolatey\bin;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;D:\JDK17\bin;C:\Users\Admin\AppData\Local\GitHubDesktop\bin;C:\apache-maven-3.8.8-bin\apache-maven-3.8.8\bin;D:\Microsoft VS Code\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;D:\Desktop\IMPORTANT_STUDY\??????????? ??????????\wrench-Windows-X64;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\msys64\mingw64\bin;D:\Java\bin;D:\php-8.3.3;D:\Git\cmd;%M2_HOME%\bin;C:\Program Files\WireGuard\;C:\Program Files\CMake\bin;C:\ProgramData\chocolatey\bin;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;D:\JDK17\bin;C:\Users\Admin\AppData\Local\GitHubDesktop\bin;C:\apache-maven-3.8.8-bin\apache-maven-3.8.8\bin;D:\Microsoft VS Code\bin;D:\Desktop\IMPORTANT STUDY\??????????? ??????????\wrench-Windows-X64;D:\apache-ant-1.10.15\bin;;." />
-    <property name="java.vendor" value="Oracle Corporation" />
-    <property name="java.vm.info" value="mixed mode, sharing" />
-    <property name="java.vm.version" value="17.0.8+9-LTS-211" />
     <property name="classes.dir" value="build/webapp/classes" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="C:\Users\Admin\.jdks\corretto-1.8.0_432\jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\build.xml" />
+    <property name="os.version" value="10.0" />
+    <property name="path.separator" value=";" />
+    <property name="webapp.dir" value="src/main/webapp" />
+    <property name="java.vm.version" value="25.432-b06" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="D:\apache-ant-1.10.15\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
     <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
-    <property name="java.class.version" value="61.0" />
+    <property name="java.specification.maintenance.version" value="6" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="sun.stdout.encoding" value="cp437" />
+    <property name="user.script" value="" />
+    <property name="user.home" value="C:\Users\Admin" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="src/test/java" />
+    <property name="java.library.path" value="C:\Users\Admin\.jdks\corretto-1.8.0_432\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\Admin\.jdks\corretto-1.8.0_432\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\msys64\mingw64\bin;D:\php-8.3.3;D:\Git\cmd;%M2_HOME%\bin;C:\Program Files\WireGuard\;C:\Program Files\CMake\bin;C:\ProgramData\chocolatey\bin;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\GitHubDesktop\bin;C:\apache-maven-3.8.8-bin\apache-maven-3.8.8\bin;D:\Microsoft VS Code\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;D:\Desktop\IMPORTANT_STUDY\??????????? ??????????\wrench-Windows-X64;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\msys64\mingw64\bin;D:\Java\bin;D:\php-8.3.3;D:\Git\cmd;%M2_HOME%\bin;C:\Program Files\WireGuard\;C:\Program Files\CMake\bin;C:\ProgramData\chocolatey\bin;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;D:\JDK17\bin;C:\Users\Admin\AppData\Local\GitHubDesktop\bin;C:\apache-maven-3.8.8-bin\apache-maven-3.8.8\bin;D:\Microsoft VS Code\bin;D:\Desktop\IMPORTANT STUDY\??????????? ??????????\wrench-Windows-X64;D:\apache-ant-1.10.15\bin;;." />
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/" />
+    <property name="war.file" value="target/WEB-LAB3-1.0.war" />
+    <property name="java.vm.vendor" value="Amazon.com Inc." />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner PointTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\build\test-reports\TEST-PointTest.xml crashfile=D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\junitvmwatcher6873705367187936642.properties propsfile=D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\junit5845316067341632572.properties" />
+    <property name="java.class.path" value="D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\build\webapp\classes;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\ant-1.10.12.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\ant-contrib-1.0b3.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\ant-jsch-1.10.12.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\ant-launcher-1.10.12.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\gson-2.10.1.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\javaee-web-api-8.0.1.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\jsch-0.1.55.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\junit-3.8.2.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\lombok-1.18.30.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\postgresql-42.5.4.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\primefaces-12.0.0.jar;D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3\lib\tools-1.8.0.jar;D:\apache-ant-1.10.15\lib\ant-launcher.jar;D:\apache-ant-1.10.15\lib\ant.jar;D:\apache-ant-1.10.15\lib\ant-junit.jar;D:\apache-ant-1.10.15\lib\ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.15 compiled on August 25 2024" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\" />
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-8/issues/" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="scp.host" value="s374806@se.ifmo.ru:." />
+    <property name="java.ext.dirs" value="C:\Users\Admin\.jdks\corretto-1.8.0_432\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="user.dir" value="D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="basedir" value="D:\Desktop\IMPORTANT_STUDY\OPI\Lab 3" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="D:\apache-ant-1.10.15\lib\ant.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="sun.stderr.encoding" value="cp437" />
     <property name="war.name" value="WEB-LAB3-1.0" />
+    <property name="target.dir" value="target" />
+    <property name="java.specification.version" value="1.8" />
     <property name="src.dir" value="src" />
-    <property name="ant.project.default-target" value="build" />
+    <property name="ant.project.invoked-targets" value="test" />
   </properties>
-  <testcase classname="PointTest" name="testCheckHitCircle" time="0.001" />
-  <testcase classname="PointTest" name="testCheckMissCircle" time="0.001" />
-  <testcase classname="PointTest" name="testCheckMissRectangle" time="0.0" />
-  <testcase classname="PointTest" name="testCheckHitTriangle" time="0.0" />
+  <testcase classname="PointTest" name="testCheckHitCircle" time="0.0" />
   <testcase classname="PointTest" name="testCheckHitRectangle" time="0.0" />
+  <testcase classname="PointTest" name="testCheckMissCircle" time="0.0" />
+  <testcase classname="PointTest" name="testCheckHitTriangle" time="0.0" />
   <testcase classname="PointTest" name="testSettersAndGetters" time="0.0" />
-  <testcase classname="PointTest" name="testCheckMissTriangle" time="0.001" />
+  <testcase classname="PointTest" name="testCheckMissTriangle" time="0.0" />
+  <testcase classname="PointTest" name="testCheckMissRectangle" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

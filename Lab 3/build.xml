@@ -57,18 +57,97 @@
         </junit>
     </target>
 
+    <taskdef name="scp" classname="org.apache.tools.ant.taskdefs.optional.ssh.Scp">
+        <classpath>
+            <pathelement path="lib/jsch-0.1.55.jar"/>
+            <pathelement path="lib/ant-jsch-1.10.12.jar"/>
+        </classpath>
+    </taskdef>
+
     <target name="scp" depends="build">
-        <scp todir="${scp.host}" port="${scp.port}" password="${scp.password}" trust="true">
+        <scp todir="${scp.host}"
+             port="${scp.port}"
+             password="${scp.password}"
+             trust="true">
             <fileset dir="${build.dir}">
-                <include name="**/*.war" />
+                <include name="**/*.war"/>
             </fileset>
         </scp>
     </target>
 
-<!--    <target name="scp" depends="build">-->
+<!--    The jar file is used to connect with svn -->
+    <target name="init-antcontrib">
+        <taskdef resource="net/sf/antcontrib/antcontrib.properties">
+            <classpath>
+                <pathelement location="lib/ant-contrib-1.0b3.jar"/>
+            </classpath>
+        </taskdef>
+    </target>
 
-<!--    </target>-->
 
+    <target name="try-compile">
+<!--        Try to compile the revision-->
+        <echo message="Trying revision: ${revision}"/>
+
+        <exec executable="svn" dir="mysvn/main" failonerror="true">
+            <arg value="update"/>
+            <arg value="-r"/>
+            <arg value="${revision}"/>
+        </exec>
+
+        <trycatch>
+            <try>
+                <antcall target="compile"/>
+                <property name="working.revision" value="${revision}"/>
+            </try>
+            <catch>
+                <echo message="Compile failed for revision ${revision}"/>
+            </catch>
+        </trycatch>
+
+        <if>
+            <isset property="working.revision"/>
+            <then>
+                <echo message="Found working revision: ${working.revision}"/>
+                <math result="revision_plus_1" operand1="${working.revision}" operation="add" operand2="1"/>
+                <propertyregex property="revision_plus_1" input="${revision_plus_1}" regexp="^([0-9]+)\.?.*$" replace="\1"/>
+
+                <exec executable="svn" dir="mysvn/main" output="mysvn/revision-diff.txt">
+                    <arg value="diff"/>
+                    <arg value="-r"/>
+                    <arg value="${working.revision}:${revision_plus_1}"/>
+                </exec>
+            </then>
+        </if>
+    </target>
+
+    <target name="history" depends="init-antcontrib">
+        <exec executable="svn" dir="mysvn/main" outputproperty="revisions" failonerror="true">
+            <arg value="log"/>
+            <arg value="-q"/>
+            <arg value="-r"/>
+            <arg value="HEAD:1"/>
+            <arg value="--limit"/>
+            <arg value="10"/>
+        </exec>
+
+        <script language="javascript">
+            <![CDATA[
+        var raw = project.getProperty("revisions");
+        var lines = raw.split("\n");
+        var revs = [];
+        for (var i = 0; i < lines.length; i++) {
+            if (lines[i].startsWith("r")) {
+                var r = lines[i].split(" ")[0].substring(1);
+                revs.push(r);
+            }
+        }
+        project.setProperty("revision.list", revs.join(","));
+        ]]>
+        </script>
+
+        <foreach list="${revision.list}" param="revision" target="try-compile"/>
+    </target>
 
 
 </project>

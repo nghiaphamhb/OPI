@@ -1,0 +1,11 @@
+Index: WEB-LAB3-1.0.war
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+
+Property changes on: WEB-LAB3-1.0.war
+___________________________________________________________________
+Deleted: svn:mime-type
+## -1 +0,0 ##
+-application/octet-stream
+\ No newline at end of property
