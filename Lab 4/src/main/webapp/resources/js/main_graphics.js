@@ -221,9 +221,6 @@ function provideInteractiveGraphics() {
         document.getElementById("form:submit-button").click();
     });
 }
-
-
-
 function clearDots() {
     const canvas = document.getElementById("graphic");
     const context = canvas.getContext('2d');

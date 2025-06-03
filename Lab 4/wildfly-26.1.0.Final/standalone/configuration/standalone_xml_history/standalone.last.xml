@@ -522,7 +522,7 @@
     </socket-binding-group>
     <deployments>
         <deployment name="WEB-LAB3-1.0.war" runtime-name="WEB-LAB3-1.0.war">
-            <content sha1="091ca4883019e237ca82d1a961563572a7a53241"/>
+            <content sha1="984893d59a7515b7ac2e32470d9237d1711ff9eb"/>
         </deployment>
     </deployments>
 </server>

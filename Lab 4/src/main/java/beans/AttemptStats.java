@@ -1,7 +1,6 @@
 package beans;
 
 import source.Attempt;
-
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 import javax.management.Notification;
@@ -14,7 +13,6 @@ public class AttemptStats extends NotificationBroadcasterSupport implements Atte
     private int totalPoints = 0;
     private int totalMisses = 0;
     long sequenceNumber = 1;
-
 
     @Override
     public synchronized int getTotalAttempts() {
@@ -52,7 +50,6 @@ public class AttemptStats extends NotificationBroadcasterSupport implements Atte
 
         return x < -r || x > r || y < -r || y > r;
     }
-
 
     @Override
     public void resetStats() {
