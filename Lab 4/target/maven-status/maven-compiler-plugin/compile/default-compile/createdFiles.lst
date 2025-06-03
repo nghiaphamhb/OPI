@@ -1,0 +1,9 @@
+beans\HitRatio.class
+beans\HitRatioMBean.class
+source\ResultTable.class
+source\TimezoneHandler.class
+source\Attempt.class
+beans\AttemptStats.class
+beans\AttemptStatsMBean.class
+utils\AttemptRepository.class
+utils\MBeanRegistry.class

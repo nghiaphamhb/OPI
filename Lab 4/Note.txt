@@ -1,0 +1,9 @@
+wildfly-preview-23.0.0.Final>bin
+.\add-user.bat
+username: chiecladoncoi
+password: **_161203****
+
+postgresql
+password: np1612
+
+1. Triển khai wildfly, postgresql trên IntelliJ
