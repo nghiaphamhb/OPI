@@ -13,7 +13,7 @@ import java.io.Serializable;
 public class AttemptStats extends NotificationBroadcasterSupport implements AttemptStatsMBean, Serializable {
     private int totalPoints = 0;
     private int totalMisses = 0;
-    long sequenceNumber = 0;
+    long sequenceNumber = 1;
 
 
     @Override
@@ -28,7 +28,7 @@ public class AttemptStats extends NotificationBroadcasterSupport implements Atte
 
     public synchronized void updateStats(Attempt p) {
         totalPoints ++;
-        if (isOutsideVisibleArea(p)){
+        if (isOutOfCanvasArea(p)){
             totalMisses++;
             Notification notification = new Notification(
                     "point.outside.bounds",
@@ -45,11 +45,14 @@ public class AttemptStats extends NotificationBroadcasterSupport implements Atte
         }
     }
 
-    private boolean isOutsideVisibleArea(Attempt p) {
-        double rMax = 6;
-        return p.getX() <= -rMax && p.getX() >= rMax
-                && p.getY() <= -rMax && p.getY() >= rMax;
+    private boolean isOutOfCanvasArea(Attempt p) {
+        double x = p.getX();
+        double y = p.getY();
+        double r = p.getR();  // R đang dùng để scale canvas
+
+        return x < -r || x > r || y < -r || y > r;
     }
+
 
     @Override
     public void resetStats() {
