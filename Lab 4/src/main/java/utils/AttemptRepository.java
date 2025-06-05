@@ -13,7 +13,6 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.transaction.Transactional;
 import java.io.Serializable;
-import java.util.List;
 
 @Named("attemptRepository")
 @SessionScoped
@@ -39,18 +38,6 @@ public class AttemptRepository implements Serializable {
         statsMBean.updateStats(attempt); // cập nhật MBean
         hitRatioMBean.getMissRatioPercent();
 //        System.out.println(">>> addAttempt called with: " + attempt);
-    }
-
-    public List<Attempt> getAttemptsList(int start, int count) {
-        List<Attempt> all = resultTable.getResults();
-        int end = Math.min(start + count, all.size());
-        return all.subList(start, end);
-    }
-
-
-    @Transactional
-    public void clearAttempts() {
-        resultTable.clear();
     }
 
 }
